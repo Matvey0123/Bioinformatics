@@ -1,0 +1,19 @@
+Все следующие команды запускал на Mac
+
+1. Для запуска необходимы установленные git и docker
+
+2. Устанавливаем flytectl:
+    1) brew install flyteorg/homebrew-tap/flytectl
+    2) flytectl upgrade
+
+3. Скачиваем репозиторий, с которого будем запускать наш код:
+    1) git clone https://github.com/flyteorg/flytesnacks
+    2) cd flytesnacks/cookbook
+    3) pip3 install -r core/requirements.txt
+
+4. Запускаем hello_world:
+    1) cp ../../example.py .
+    2) flytectl demo start
+    4) pyflyte run --remote example.py my_wf
+
+После этого переходим по ссылке в браузер и смотрим результат
